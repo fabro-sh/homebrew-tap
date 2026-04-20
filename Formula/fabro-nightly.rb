@@ -2,25 +2,25 @@ class FabroNightly < Formula
   desc "Unified CLI for the Fabro AI framework (nightly channel)"
   homepage "https://fabro.sh"
   license "MIT"
-  version "0.208.0-nightly.1"
+  version "0.209.0-nightly.0"
 
   conflicts_with "fabro", because: "both install the fabro binary"
 
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/fabro-sh/fabro/releases/download/v0.208.0-nightly.1/fabro-aarch64-apple-darwin.tar.gz"
-      sha256 "ab58360845ac5db915532c4ac76c707cdcabcaf9b77a75d90a9497c126d07407"
+      url "https://github.com/fabro-sh/fabro/releases/download/v0.209.0-nightly.0/fabro-aarch64-apple-darwin.tar.gz"
+      sha256 "a9e6ba8ec42a4040e1e3b8a82d29bcf99baab966f2de566c9e9dd3eed33bcfb8"
     end
   end
 
   if OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/fabro-sh/fabro/releases/download/v0.208.0-nightly.1/fabro-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "93b5366a658e03e6d4877004e38b60fea6b61fbfaba9731e8b2284e155e40bc3"
+      url "https://github.com/fabro-sh/fabro/releases/download/v0.209.0-nightly.0/fabro-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "71ec29dce3f3c689fdde08f893fcb9389abe9d455241aa2ce651563a809c7663"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/fabro-sh/fabro/releases/download/v0.208.0-nightly.1/fabro-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "694c3b248bac3277bb4ee086ed7f309ce2d0008b27984281d89a2ef18054728e"
+      url "https://github.com/fabro-sh/fabro/releases/download/v0.209.0-nightly.0/fabro-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "53297b0d1d04f92e1ffec95257e8f5b6eb1b85c0b34d6fdf769a046389881c71"
     end
   end
 
