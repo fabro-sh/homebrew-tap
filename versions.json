@@ -1,7 +1,7 @@
 {
   "stable": {
-    "version": "0.176.2",
-    "tag": "v0.176.2"
+    "version": "0.227.0",
+    "tag": "v0.227.0"
   },
   "nightly": {
     "version": "0.227.0-nightly.2",
